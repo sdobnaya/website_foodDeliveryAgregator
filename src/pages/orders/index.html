@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Lectrum</title>
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="aside">
+      <a href="/" class="logo"><img src="img/logo-main.png" alt="Ням-ням лого"></a>
+      <nav class="navigation">
+        <a class="navigation__item navigation__item--choice" href="/">Выбор</a>
+        <a class="navigation__item navigation__item--saved disabled" href="">Сохраненное</a>
+        <a class="navigation__item navigation__item--orders selected" href="orders.html">Заказы</a>
+        <a class="navigation__item navigation__item--email disabled" href="">Сообщения</a>
+        <a class="navigation__item navigation__item--settings disabled" href="">Настройки</a>
+      </nav>
+      <div class="user">
+        <img class="user__image" src="img/user.svg" alt="">
+        <div>
+          <div class="user__name">Иван Вкуснолюбов</div>
+          <div>ivkusnoljubov@lectrum.io</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="top-bar">
+        <div class="top-bar__left">
+          <div class="select">
+            <img class="select__icon" src="img/icons/location.svg" alt="">
+            <select class="select__field" name="location">
+              <option class="select__option" value="">Минск, Белоруссия</option>
+              <option class="select__option" value="">Москва, Россия</option>
+              <option class="select__option" value="">Киев, Украина</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <img class="select__icon" src="img/icons/shopping-bag.svg" alt="">
+            <select class="select__field" name="delivery-option">
+              <option class="select__option" value="">Забрать с собой</option>
+              <option class="select__option" value="">Доставить домой</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="top-bar__right">
+          <div class="input">
+            <img class="input__icon" src="img/icons/search.svg" alt="">
+            <input class="input__field" type="text" placeholder="Найти что-нибудь вкусное">
+          </div>
+          <button class="icon-button icon-button--orange">
+            <img src="img/icons/shopping-cart.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="h2">Активные заказы</h2>
+        <div id="comingUp" class="coming-up">
+        
+        </div>
+      </section>
+
+      <section>
+        <h2 class="h2">Предыдущие заказы</h2>
+        <div id="previous" class="previous">
+          <div class="previous__item previous-item">
+            <div class="previous-item__header">
+                <h4 class="h4">Domino's Pizza</h4>
+                <div class="badge badge--green">Выполнен</div>
+            </div>
+            <div class="previous-item-info">
+              <div class="previous-item-info__date">10 сентября 2021</div>
+              <div class="previous-item-info__time">22:59 PM</div>
+            </div>
+            <ul class="previous-item-dishes">
+              <li class="previous-item-dishes__item">
+                <span class="previous-item-dishes__quantity">1</span>
+                Пицца Пепперони с томатами
+              </li>
+              <li class="previous-item-dishes__item">
+                <span class="previous-item-dishes__quantity">1</span>
+                Пицца Маргарита
+              </li>
+              <li class="previous-item-dishes__item">
+                <span class="previous-item-dishes__quantity">1</span>
+                Пицца Техас
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+  </div>
+</body>
+</html>
